@@ -275,6 +275,7 @@ input#persons {
 
 .tip-selection {
     width: 100%;
+    position: relative;
 }
 .btn-tip-percent.active {
     background: var(--green);
@@ -291,6 +292,7 @@ input#persons {
 }
 .persons {
     margin-top: 40px;
+    position: relative;
 }
 .tip-amount,
 .total-person {
@@ -349,6 +351,29 @@ input#persons {
     letter-spacing: -1px;
     color: #26c2ae;
 }
+input#persons.error {
+    border: 2px solid #e17457;
+}
+input#customTip.error {
+    border: 2px solid #e17457;
+}
+.persons p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e17457;
+    display: none;
+}
+input#bill.error {
+    border: 2px solid #e17457;
+}
+.custom-input-amount-zero {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    color: #e17457;
+    display: none;
+}
 /* 	=====================
 	   DESKTOP 1440px
     =====================
@@ -369,6 +394,14 @@ input#persons {
         width: 379px;
         height: 388px;
         margin-right: 48px;
+        position: relative;
+    }
+    .input-amount-zero {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #e17457;
+        display: none;
     }
     .output-amount {
         width: 413px;
@@ -401,6 +434,14 @@ input#persons {
         width: 311px;
         height: 436px;
         margin-top: 32px;
+        position: relative;
+    }
+    .input-amount-zero {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #e17457;
+        display: none;
     }
 
     .output-amount {
@@ -408,9 +449,11 @@ input#persons {
         height: 257px;
         box-sizing: border-box;
         padding: 39px 22px 24px 24px;
+        margin-top: 32px;
     }
     .buttons-tip {
         height: 176px;
+        position: relative;
     }
     .btn.btn-tip-percent {
         width: 146px;
@@ -422,8 +465,10 @@ input#persons {
     input#bill {
         margin-bottom: 32px;
     }
+
     .persons {
         margin-top: 32px;
+        position: relative;
     }
     .total-person-container {
         margin: 0px;

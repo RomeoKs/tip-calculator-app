@@ -34,15 +34,17 @@
                 <div class="input-amount">
                     <label for="bill">Bill</label> <br />
                     <input type="number" name="bill" id="bill" placeholder="0" />
+                    <p class="input-amount-zero">Can’t be zero</p>
                     <div class="tip-selection">
                         <label>Select Tip %</label><br />
                         <div class="buttons-tip">
-                            <button class="btn btn-tip-percent">5%</button>
-                            <button class="btn btn-tip-percent">10%</button>
-                            <button class="btn btn-tip-percent">15%</button>
+                            <button class="btn btn-tip-percent" value="0.05">5%</button>
+                            <button class="btn btn-tip-percent" value="0.10">10%</button>
+                            <button class="btn btn-tip-percent" value="0.15">15%</button>
 
-                            <button class="btn btn-tip-percent">25%</button>
-                            <button class="btn btn-tip-percent">50%</button>
+                            <button class="btn btn-tip-percent" value="0.25">25%</button>
+                            <button class="btn btn-tip-percent" value="0.50">50%</button>
+                            <p class="custom-input-amount-zero">Can’t be zero</p>
                             <input
                                 type="number"
                                 name="custom"
@@ -56,6 +58,7 @@
                     <div class="persons">
                         <label for="persons">Number of People</label> <br />
                         <input type="number" name="persons" id="persons" placeholder="0" />
+                        <p>Can’t be zero</p>
                     </div>
                 </div>
                 <div class="output-amount">
@@ -73,7 +76,7 @@
                         </div>
                         <div class="total-person-value">$<span>0.00</span></div>
                     </div>
-                    <button class="btn btn-reset empty">Reset</button>
+                    <button class="btn btn-reset empty" id="resetBtn">Reset</button>
                 </div>
             </div>
         </main>
@@ -84,5 +87,6 @@
                 >Frontend Mentor</a
             >. Coded by <a href="#">Romeo Kiss</a>.
         </div>
+        <script src="script.js" id="reloadMe"></script>
     </body>
 </html>
